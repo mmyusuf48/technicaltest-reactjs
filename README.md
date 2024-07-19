@@ -1,70 +1,88 @@
-# Getting Started with Create React App
+# React.js Frontend Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This repository contains a frontend application built with React.js . This application takes data from OmdbApi
 
-## Available Scripts
+## Prerequisites
 
-In the project directory, you can run:
+- **React.js**: Version 18.3.1
+- **npm**: Version 10.8.1
 
-### `npm start`
+## Getting Started
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To get the application up and running on your local machine, follow these steps:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone repository
+    
+    ```
+    git clone
+    ```
 
-### `npm test`
+2. Install dependencies:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+   ```bash
+   npm install
+   ```
 
-### `npm run build`
+3. Install dependencies:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+   ```bash
+   npm start
+   ```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+The application will be available at `http://localhost:3000`.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Key Dependencies
 
-### `npm run eject`
+- **@tanstack/react-query**: For fetching, caching, synchronizing, and updating server state in React applications.
+  - Version: 5.48.0
+- **axios**: Promise based HTTP client for making HTTP requests.
+  - Version: 1.7.2
+- **@testing-library/user-event**: Simulates user interactions for testing purposes.
+  - Version: ^13.5.0
+- **react-icons**: Provides popular icons as React components.
+  - Version: ^5.2.1
+- **react-router-dom**: Declarative routing for React applications.
+  - Version: ^6.25.1
+- **@babel/core**: Babel compiler core.
+  - Version: ^7.24.9
+- **@babel/preset-env**: Smart Babel preset for compiling ES2015+ syntax.
+  - Version: ^7.24.8
+- **@babel/preset-react**: Babel preset for React.
+  - Version: ^7.24.7
+- **@testing-library/dom**: Provides simple and complete DOM testing utilities.
+  - Version: ^10.3.2
+- **@testing-library/jest-dom**: Custom jest matchers for asserting on DOM nodes.
+  - Version: ^6.4.6
+- **@testing-library/react**: Simple and complete React DOM testing utilities.
+  - Version: ^16.0.0
+- **autoprefixer**: PostCSS plugin to parse CSS and add vendor prefixes.
+  - Version: ^10.4.19
+- **jest**: JavaScript testing framework.
+  - Version: ^29.7.0
+- **jest-environment-jsdom**: Jest environment to simulate a browser environment.
+  - Version: ^29.7.0
+- **postcss**: Tool for transforming CSS with JavaScript plugins.
+  - Version: ^8.4.39
+- **tailwindcss**: Utility-first CSS framework for rapid UI development.
+  - Version: ^3.4.6
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Structure
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+The `src` directory is organized as follows:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **app**: Contains the main application components.
+- **assets**: Stores images, fonts, and other static assets.
+- **feature**: Contains feature-specific components and logic.
+- **lib**: Contains utility functions and libraries.
+- **service**: Contains API service functions.
+- **test**: Contains test files for the application.
+- **ui**: Contains reusable UI components.
 
-## Learn More
+## Running Tests
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+To run the tests for this application, use the following command:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+```bash
+npm test
+```
