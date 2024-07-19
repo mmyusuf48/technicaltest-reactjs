@@ -14,7 +14,7 @@ To get the application up and running on your local machine, follow these steps:
 1. Clone repository
     
     ```
-    git clone
+    git clone https://github.com/mmyusuf48/technicaltest-reactjs.git
     ```
 
 2. Install dependencies:
