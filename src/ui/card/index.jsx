@@ -3,23 +3,18 @@ import { Link } from 'react-router-dom';
 
 const CardUi = ({ title, year, imdbID, type, poster }) => {
     return (
-        <div className="bg-white shadow-lg rounded-lg overflow-hidden hover:shadow-xl transition-shadow duration-300">
+        <div className="bg-white shadow-lg rounded-lg overflow-hidden flex flex-col h-full">
             <img className="w-full h-auto object-cover" src={poster} alt={title} />
-            <div className="p-4">
-                <h2 className="text-xl font-bold text-gray-800 mb-2">{title}</h2>
-                <p className="text-gray-600 mb-1">{year}</p>
-                <p className="text-gray-500 mb-2 capitalize">{type}</p>
-                <div className="flex justify-between">
-                    <a
-                        href={`https://www.imdb.com/title/${imdbID}`}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="text-blue-500 hover:underline"
-                    >
-                        IMDb Link
-                    </a>
-                    <Link to={`/movie/${imdbID}`} className="text-blue-500 hover:underline">
-                        Detail
+            <div className="p-4 flex flex-col flex-grow">
+                <div className="flex flex-col space-y-2">
+                    <h2 className="text-xl font-bold text-gray-800">{title}</h2>
+                    <p className="text-gray-600">{year}</p>
+                    <p className="text-gray-500 capitalize">{type}</p>
+                </div>
+                <div className="flex-grow"></div>
+                <div className="flex mt-3">
+                    <Link to={`/movie/${imdbID}`} className="py-2 text-lg text-center rounded-md w-full text-white bg-teal-500 hover:bg-teal-600">
+                        Detail movie
                     </Link>
                 </div>
             </div>

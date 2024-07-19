@@ -19,9 +19,9 @@ const DefaultTamplateUi = ({ children }) => {
         <div>
             {children}
         </div>
-        <div className='mt-8 py-4 flex justify-center shadow-md'>
-            <div className="">
-                footer
+        <div className='mt-8 py-4 flex justify-center border-t-2 shadow-md'>
+            <div className="text-gray-600">
+            &copy; {new Date().getFullYear()} Yusuf. All rights reserved.
             </div>
         </div>
     </div>
